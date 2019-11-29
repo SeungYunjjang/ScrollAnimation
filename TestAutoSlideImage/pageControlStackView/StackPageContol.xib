@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="StackPageContol" customModule="TestAutoSlideImage" customModuleProvider="target">
+            <connections>
+                <outlet property="dotImageView" destination="HuI-fR-Gkr" id="EYC-Lh-gKp"/>
+                <outlet property="pageStackView" destination="5do-kQ-aRn" id="Gup-wt-eqU"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="5do-kQ-aRn">
+                    <rect key="frame" x="197" y="435.5" width="20" height="25"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="page_dot_current_icon" translatesAutoresizingMaskIntoConstraints="NO" id="HuI-fR-Gkr">
+                            <rect key="frame" x="0.0" y="7.5" width="20" height="10"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="20" id="1JZ-eh-yTq"/>
+                                <constraint firstAttribute="height" constant="10" id="lRz-wG-l5c"/>
+                            </constraints>
+                        </imageView>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="25" id="PeH-az-UZh"/>
+                    </constraints>
+                </stackView>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="5do-kQ-aRn" secondAttribute="trailing" id="Byf-BY-1vo"/>
+                <constraint firstItem="5do-kQ-aRn" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="ElT-fq-PFO"/>
+                <constraint firstItem="5do-kQ-aRn" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="FKT-cd-9Wm"/>
+                <constraint firstItem="5do-kQ-aRn" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="iN0-l3-epB" secondAttribute="leading" id="Nwf-gU-iuu"/>
+            </constraints>
+            <point key="canvasLocation" x="139" y="153"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="page_dot_current_icon" width="18" height="8"/>
+    </resources>
+</document>
